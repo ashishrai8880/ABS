@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redtron</title>
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav
+        class=" relative w-full flex flex-wrap items-center justify-around  py-2 bg-gray-100 text-gray-500  hover:text-gray-700  focus:text-gray-700 shadow-lg navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid w-full lg:w-[80%] flex flex-wrap items-center justify-between px-6">
+            <button class="  navbar-toggler text-gray-500 border-0 hover:shadow-none hover:no-underline
+        py-2 px-2.5  bg-transparent  focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
+                type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="w-6" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
+                <a class="
+        flex items-center text-gray-900  hover:text-gray-900 focus:text-gray-900  mt-2  lg:mt-0  mr-1 " href="#">
+                    <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" style="height: 15px"
+                        alt="" loading="lazy" />
+                </a>
+                <!-- Left links -->
+                <ul class="navbar-nav flex flex-col pl-0 list-style-none ml-auto">
+                    <li
+                        class="nav-item text-[#015474] py-3 cursor-pointer px-5 hover:text-white focus:underline hover:bg-[#015474] rounded-full">
+                        <a class="nav-link  font-bold " href="#">Home</a>
+                    </li>
+                    <li
+                        class="nav-item text-[#015474] py-3 cursor-pointer px-5 hover:text-white focus:underline hover:bg-[#015474] rounded-full">
+                        <a class="nav-link  font-bold " href="#">Service</a>
+                    </li>
+                    <li
+                        class="nav-item text-[#015474] py-3 cursor-pointer px-5 hover:text-white focus:underline hover:bg-[#015474] rounded-full">
+                        <a class="nav-link  font-bold " href="#">Blog</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Video Body -->
+    <div id="carouselExampleCaptionsFull" class="carousel slide carousel-fade relative h-screen"
+        data-bs-ride="carousel">
+        <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+            <button type="button" data-bs-target="#carouselExampleCaptionsFull" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptionsFull" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptionsFull" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner relative w-full overflow-hidden h-screen">
+            <div class="carousel-item active relative float-left w-full h-screen bg-no-repeat bg-cover bg-center">
+                <video class="min-w-full min-h-full max-w-fit xl:min-w-0 xl:min-h-0" playsinline autoplay muted loop>
+                    <source class="" src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+                </video>
+                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+                    style="background-color: rgba(0, 0, 0, 0.6);">
+                    <div class="flex justify-center items-center h-full">
+                        <div class="text-white text-center px-14 px-md-0">
+                            <h2 class="text-3xl font-semibold mb-4">Get Simplified Payroll Advantage</h2>
+                            <h5 class="text-lg font-semibold mb-6">Outsourced Payroll Service enables you to sharpen focus on talent and Strategy</h5>
+                            <div class="md:space-x-2">
+                                <a type="button"
+                                    class="inline-block px-6 py-2 mb-2 md:mb-0 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition  hover:scale-110  duration-150 ease-in-out"
+                                    href="#!" role="button" data-mdb-ripple="true" data-mdb-ripple-color="light">SEE SUCCESS STORIES
+                                    tutorial</a>
+                                <a type="button"
+                                    class="inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded  hover:bg-opacity-5 focus:outline-none focus:ring-0 transition hover:scale-110 hover:bg-green-500 duration-150 ease-in-out"
+                                    href="#!" role="button" data-mdb-ripple="true" data-mdb-ripple-color="light">GET ABS ADVANTAGE
+                                    more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item relative float-left w-full h-screen bg-no-repeat bg-cover bg-center">
+                <video class="min-w-full min-h-full max-w-fit xl:min-w-0 xl:min-h-0" playsinline autoplay muted loop>
+                    <source class="" src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
+                </video>
+                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+                    style="background-color: rgba(0, 0, 0, 0.3)">
+                    <div class="flex justify-center items-center h-full">
+                        <div class="text-white text-center px-14 px-md-0">
+                            <h2 class="text-3xl font-semibold mb-4">Discover how our statuary and compliance management service will keep your worries away</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item relative float-left w-full h-screen bg-no-repeat bg-cover bg-center">
+                <video class="min-w-full min-h-full max-w-fit xl:min-w-0 xl:min-h-0" playsinline autoplay muted loop>
+                    <source class="" src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+                </video>
+                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+                    style="background: linear-gradient(45deg, rgba(29, 236, 197, 0.7), rgba(91, 14, 214, 0.7) 100%);">
+                    <div class="flex justify-center items-center h-full">
+                        <div class="text-white text-center px-14 px-md-0">
+                            <h2 class="text-3xl font-semibold mb-4">Tailored Payroll Service for all size of Business</h2>
+                            <a type="button"
+                                class="inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                                href="#!" role="button" data-mdb-ripple="true" data-mdb-ripple-color="light">SCHEDULE AN EXPLORATION CALL</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button
+            class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+            type="button" data-bs-target="#carouselExampleCaptionsFull" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+            class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+            type="button" data-bs-target="#carouselExampleCaptionsFull" data-bs-slide="next">
+            <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Discover how our statuary -->
+    <section class="text-white body-font bg-[#015474]">
+        <div class="container px-5 py-6 mx-auto">
+            <div class="text-center mb-3">
+                <h1 class="sm:text-xl text-xl font-bold text-center title-font text-white mb-2 italic">Discover how our
+                    statuary & compliances management service will keep your worries away .</h1>
+                <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto italic">We take care compliace management
+                    tasks . Have a peaceful sleep at night .
+                </p>
+            </div>
+
+            <button
+                class="flex mx-auto text-[#015474] bg-white border-0 py-1 px-8 focus:outline-none hover:bg-green-600 hover:text-white font-bold italic cursor-pointer hover:scale-110 rounded-full text-lg ">SCHEDULE
+                AN EXPLORATION CALL</button>
+        </div>
+    </section>
+
+
+
+
+    <!-- Tailored Payroll Services -->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="text-center mb-20">
+                <h1 class="sm:text-3xl text-2xl font-bold italic title-font text-[#015474] mb-4">Tailored Payroll
+                    Services For all Size of Business
+                </h1>
+                <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Outsources Payroll
+                    Services for startups , MSME , large enterprises and can be tailored to meet your business need .
+                    ABS headquarted in Chennai with 3 office across India is the trusted name when it comes to
+                    delivering excellence in Payroll Management</p>
+                <div class="flex mt-6 justify-center">
+                    <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                </div>
+            </div>
+            <div class="flex-col flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6 ">
+
+                <div class="flex flex-wrap -m-4 text-center mx-auto md:w-[80%]">
+                    <div class="p-4 sm:w-1/3 w-1/2">
+                        <div class="w-25 h-25 inline-flex items-center justify-center rounded-lg  mb-5 flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1598301257982-0cf014dabbcd?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHN0YXJ0dXBzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600"
+                                alt="" class="rounded-lg hover:scale-110 ease-in duration-300 ">
+                        </div>
+                        <h2 class="title-font italic sm:text-1xl text-1xl text-[#015474] font-bold">STARTUPS & MSME</h2>
+                    </div>
+                    <div class="p-4 sm:w-1/3 w-1/2">
+                        <div class="w-25 h-25 inline-flex items-center justify-center rounded-lg  mb-5 flex-shrink-0">
+                            <img src="https://media.istockphoto.com/photos/modern-cube-shaped-office-building-parking-lot-suburban-maryland-usa-picture-id145195124?b=1&k=20&m=145195124&s=170667a&w=0&h=ecZLp7HxfSHdpFF-sK9o18sDD4YFT-bdkbJH9dtybrw="
+                                alt="" class="rounded-lg  hover:scale-110 ease-in duration-300 ">
+                        </div>
+                        <h2 class="title-font italic sm:text-1xl text-1xl text-[#015474] font-bold">MEDIUM SIZE
+                            COMPANIES </h2>
+                    </div>
+                    <div class="p-4 sm:w-1/3 w-1/2">
+                        <div class="w-25 h-25 inline-flex items-center justify-center rounded-lg  mb-5 flex-shrink-0">
+                            <img src="https://media.istockphoto.com/photos/hong-kong-central-district-skyscrapers-picture-id1295808919?b=1&k=20&m=1295808919&s=170667a&w=0&h=fg8T-IS5ilzmoYwN0hILB2IdGbH2zQFosHyAoeXD9Ag="
+                                alt="" class="rounded-lg  hover:scale-110 ease-in duration-300 ">
+                        </div>
+                        <h2 class="title-font italic sm:text-1xl text-1xl text-[#015474] font-bold"> LARGE ENTERPRISES
+                        </h2>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Mileston of our payroll service -->
+    <section class="bg-[#015474] text-white pb-2 pt-5">
+
+        <section class="text-white body-font bg-[#015474]">
+            <div class="container px-5 py-4 mx-auto">
+                <div class="text-center mb-3">
+                    <h1 class="sm:text-3xl text-2xl font-bold text-center italic title-font text-white mb-2">Mileston of
+                        Our
+                        Outsourced Payroll Services Journey</h1>
+                    <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto italic">Our groth is the result of our
+                        commitment toward simplifying your business and our shared values .
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="text-white body-font">
+            <div class="container px-5 py-4 mb-24 mx-auto">
+                <div class="flex flex-wrap -m-4 text-center">
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                        <h2 class="title-font font-bold sm:text-4xl text-3xl text-white">42</h2>
+                        <p class="leading-relaxed text-white">CLIENT SERVED</p>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                        <h2 class="title-font font-bold sm:text-4xl text-3xl text-white">3</h2>
+                        <p class="leading-relaxed  text-white">MILLION PAYSLIPS GENERATED</p>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                        <h2 class="title-font font-bold sm:text-4xl text-3xl text-white">21</h2>
+                        <p class="leading-relaxed  text-white">TEAM MEMBERS</p>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                        <h2 class="title-font font-bold sm:text-4xl text-3xl text-white">1</h2>
+                        <p class="leading-relaxed text-white">OFFICE ACROSS INDIA</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+    <div class="flex flex-col text-center w-full pt-9 ">
+        <h1 class="sm:text-3xl text-2xl font-bold italic title-font mb-4 text-[#015474]">The Origin Story of Associate
+            Business Service (ABS)</h1>
+    </div>
+
+
+    <!-- origin of ABS -->
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded-lg  hover:scale-110 ease-in duration-300 " alt="hero"
+                    src="https://media.istockphoto.com/photos/team-of-young-computer-programmers-cooperating-in-the-office-picture-id1157345255?b=1&k=20&m=1157345255&s=170667a&w=0&h=prDhzMeI5tUoecj4kQwxOnRSI6X2vyVMkHbYOGU1Stw=">
+            </div>
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-2xl text-3xl mb-4 font-bold text-black italic">ABS is the most experienced
+                    and trusted name for outsourced Payroll Processing System
+                </h1>
+                <p class="mb-8 leading-relaxed italic font-bold text-[#015474]">Having served 100+ clients with our
+                    simplified payroll system and printing 7 million payslips so far , we at ABS came a long way .
+                    Although incorportated in 2005 our story sprouted from hard time of Human Resources Management in
+                    India back in the late 90's and early 2000 .</p>
+                <div class="flex justify-center">
+                    <button
+                        class="inline-flex text-white bg-[#015474] border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded-full font-bold cursor-pointer text-lg">Learn
+                        More</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- 20 years of outousreced payroll -->
+    <section class="text-gray-600 body-font bg-gray-100">
+        <div class="container px-5 py-24 mx-auto w-3/4">
+            <div class="text-center mb-20">
+                <h1 class="sm:text-3xl text-3xl font-bold title-font text-[#015474] italic mb-4">20 Years of Outsourced
+                    Payroll Service Delivered to Industries Across India
+                </h1>
+                <div class="flex mt-6 justify-center mb-9">
+                    <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex "></div>
+                </div>
+                <p class="text-base leading-relaxed xl:w-[80%] lg:w-[80%] mx-auto text-black font-bold italic">From
+                    Stratups to large Enterprises , Our Payroll Management service makes life easier with our diverse
+                    range of industry experience , plug and play technology independent and flexibility </p>
+
+            </div>
+            <div class="flex-col flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+
+                <div class="flex flex-wrap -m-4 text-center">
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                        <div class="w-25 h-25 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
+                            <img src="https://media.istockphoto.com/photos/african-mechanical-engineer-doing-maintenance-the-robotic-welding-picture-id1325058982?b=1&k=20&m=1325058982&s=170667a&w=0&h=qlI4yurUvFGbGEj1QGYakWq27o-ITfp8Hjm3H1LO32Y="
+                                alt="" class="rounded-full  hover:scale-110 ease-in duration-300 ">
+                        </div>
+                        <h2 class="title-font italic sm:text-1xl text-1xl text-[#015474] font-bold">Manufacturing</h2>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                        <div class="w-25 h-25 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&raw_url=true&q=60&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW4lMjByZXNvdXJjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600"
+                                alt="" class="rounded-full  hover:scale-110 ease-in duration-300 ">
+                        </div>
+                        <h2 class="title-font italic sm:text-1xl text-1xl text-[#015474] font-bold">Human Resources</h2>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                        <div class="w-25 h-25 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZmluYW5jZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600"
+                                alt="" class="rounded-full  hover:scale-110 ease-in duration-300 ">
+                        </div>
+                        <h2 class="title-font italic sm:text-1xl text-1xl text-[#015474] font-bold">Finance & Fintech
+                        </h2>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                        <div class="w-25 h-25 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1557234195-bd9f290f0e4d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YWdyaWN1bHR1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=600"
+                                alt="" class="rounded-full hover:scale-110 ease-in duration-300 ">
+                        </div>
+                        <h2 class="title-font italic sm:text-1xl text-1xl text-[#015474] font-bold">Agriculture</h2>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                        <div class="w-25 h-25 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
+                            <img src="https://media.istockphoto.com/photos/three-multiethnic-construction-workers-chatting-picture-id1332558192?b=1&k=20&m=1332558192&s=170667a&w=0&h=8ZgHhEN3EWMaeuHWBCgTQLs42Mz03xaXhV1pFp1Cuzs="
+                                alt="" class="rounded-full hover:scale-110 ease-in duration-300 ">
+                        </div>
+                        <h2 class="title-font italic sm:text-1xl text-1xl text-[#015474] font-bold">Engineering</h2>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                        <div class="w-25 h-25 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cmV0YWlsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600"
+                                alt="" class="rounded-full hover:scale-110 ease-in duration-300 ">
+                        </div>
+                        <h2 class="title-font italic sm:text-1xl text-1xl text-[#015474] font-bold">Retail</h2>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                        <div class="w-25 h-25 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1604689598793-b8bf1dc445a1?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGVxdWl0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600"
+                                class="rounded-full hover:scale-110 ease-in duration-300 ">
+                        </div>
+                        <h2 class="title-font italic sm:text-1xl text-1xl text-[#015474] font-bold">Private Equity</h2>
+                    </div>
+                    <div class="p-4 sm:w-1/4 w-1/2">
+                        <div class="w-25 h-25 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
+                            <img src="https://media.istockphoto.com/photos/generic-modern-suv-car-in-concrete-garage-picture-id1307086567?b=1&k=20&m=1307086567&s=170667a&w=0&h=NjcM6LIOkmfhyqH-zrbFU7pHCPxIABvNhWaOElm_P-E="
+                                alt="" class="rounded-full hover:scale-110 ease-in duration-300 ">
+                        </div>
+                        <h2 class="title-font italic sm:text-1xl text-1xl text-[#015474] font-bold">Automobile</h2>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Clients Section -->
+    <section class="text-gray-600 body-font bg-white">
+        <div class="container px-5 py-6 mx-auto w-3/4">
+            <div class="text-center mb-20">
+                <h1 class="sm:text-3xl text-3xl font-bold italic title-font text-[#015474] mb-4">Our Clients
+                </h1>
+                <div class="flex mt-6 justify-center mb-9">
+                    <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex "></div>
+                </div>
+                <p class="text-base font-bold leading-relaxed xl:w-[80%] lg:w-[80%] mx-auto text-black italic">Here are
+                    the
+                    some
+                    esteemed small , mid size and large enterprises we work so far . </p>
+
+            </div>
+            <div class="flex-col flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+
+                <div class="flex flex-wrap -m-4 text-center">
+                    <div class="p-4 sm:w-1/5 w-1/2">
+                        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
+                            <img src="https://media.istockphoto.com/photos/dart-target-icon-picture-id183425983?b=1&k=20&m=183425983&s=170667a&w=0&h=7TzRHqQ2D-bTpve4fszogA6RKa5ZEHBAmnzRxuKAbAY="
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="p-4 sm:w-1/5 w-1/2">
+                        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZWJvb2slMjBpY29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="p-4 sm:w-1/5 w-1/2">
+                        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjZWJvb2slMjBpY29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="p-4 sm:w-1/5 w-1/2">
+                        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZmFjZWJvb2slMjBpY29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="p-4 sm:w-1/5 w-1/2">
+                        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
+                            <img src="https://media.istockphoto.com/photos/red-play-icon-button-on-white-background-social-media-and-sign-3d-picture-id1348212541?k=20&m=1348212541&s=612x612&w=0&h=1G5PZjpHWmQh5PtF4k-BOkx8Aly58amBkfAuXkWsiC4="
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="p-4 sm:w-1/5 w-1/2">
+                        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
+                            <img src="https://media.istockphoto.com/photos/global-networks-and-social-media-concept-picture-id1189078735?k=20&m=1189078735&s=612x612&w=0&h=0ZInscd3xt_0M8hMZ6B3O1qwygSP85SZFAo9fy3jop4="
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="p-4 sm:w-1/5 w-1/2">
+                        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
+                            <img src="https://media.istockphoto.com/photos/blue-yes-check-mark-icon-symbol-or-tick-ok-correct-button-and-choice-picture-id1338200665?k=20&m=1338200665&s=612x612&w=0&h=753QwX3zGfkuaUGr_eI2hd9N8lE69hidlRUf-ggsTPI="
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="p-4 sm:w-1/5 w-1/2">
+                        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full  flex-shrink-0">
+                            <img src="https://media.istockphoto.com/photos/shield-with-gear-icon-filled-flat-sign-web-design-shield-protection-picture-id1397763131?k=20&m=1397763131&s=612x612&w=0&h=BBck1V-HHX97zie9YP4gS7xvmHx_Td92dOM6tDT9Fos="
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="p-4 sm:w-1/5 w-1/2">
+                        <div
+                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                            <img src="https://media.istockphoto.com/photos/dart-target-icon-picture-id183425983?b=1&k=20&m=183425983&s=170667a&w=0&h=7TzRHqQ2D-bTpve4fszogA6RKa5ZEHBAmnzRxuKAbAY="
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="p-4 sm:w-1/5 w-1/2">
+                        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full  mb-5 flex-shrink-0">
+                            <img src="https://media.istockphoto.com/photos/collection-of-popular-web-and-print-3d-icons-for-design-and-banner-picture-id1303161942?k=20&m=1303161942&s=612x612&w=0&h=3kDRx6v7YHPSPxncsRBpBszWcdTDijQ47ak_Hwic47M="
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Comment Section -->
+
+    <section class="text-gray-600 body-font bg-gray-300">
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="text-3xl italic  font-medium font-bold title-font text-blue-900 mb-4 text-center">See what they
+                have to say
+            </h1>
+            <p class="text-sm font-medium title-font text-blue-900 mb-9 text-center">More reason for you to partner with
+                us for outsourced payroll and compliance management services.</p>
+
+
+            <!-- Comments     -->
+            <div id="carouselExampleCaptions" class="carousel slide relative carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-inner relative w-full overflow-hidden">
+                    <div class="carousel-item active relative float-left w-full text-center">
+
+                        <p class="mt-4 text-xl italic mx-auto text-black max-w-4xl font-bold">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
+                                class="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                                </path>
+                            </svg>
+                            We have been using ABS(Associate Business Services Pvt Ltd ) Payroll Provider for 10 years.
+                            Their Service , Expertises and Reliability has been exemplary and provide great service .
+                            They are a pleasure to deal with . We trust ABS and their team completely .
+                        </p>
+                        <div class="mt-12 mb-6 flex justify-center">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                                class="rounded-full w-24 h-24 shadow-lg" alt="smaple image" />
+                        </div>
+                        <p class="text-black font-bold italic">- Raghesh AC / SR HR MANAGER - INDIA , CARGOTEC PRIVATE
+                            LIMITED</p>
+                    </div>
+                    <div class="carousel-item relative float-left w-full text-center">
+                        <p class="mt-4 text-xl italic mx-auto text-black max-w-4xl font-bold">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
+                                class="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                                </path>
+                            </svg>
+                            We have been using ABS(Associate Business Services Pvt Ltd ) Payroll Provider for 10 years.
+                            Their Service , Expertises and Reliability has been exemplary and provide great service .
+                            They are a pleasure to deal with . We trust ABS and their team completely .
+                        </p>
+                        <div class="mt-12 mb-6 flex justify-center">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                                class="rounded-full w-24 h-24 shadow-lg" alt="smaple image" />
+                        </div>
+                        <p class="text-black font-bold italic">- Teresa May , UI Developer - Microsoft</p>
+                    </div>
+                    <div class="carousel-item relative float-left w-full text-center">
+                        <p class="mt-4 text-xl italic mx-auto text-black max-w-4xl font-bold">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
+                                class="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                                </path>
+                            </svg>
+                            We have been using ABS(Associate Business Services Pvt Ltd ) Payroll Provider for 10 years.
+                            Their Service , Expertises and Reliability has been exemplary and provide great service .
+                            They are a pleasure to deal with . We trust ABS and their team completely .
+                        </p>
+                        <div class="mt-12 mb-6 flex justify-center">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                                class="rounded-full w-24 h-24 shadow-lg" alt="smaple image" />
+                        </div>
+                        <p class="text-black font-bold italic">- Kate Allise , Software Engineer - Google</p>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                    type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                    type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Latest news and statuary -->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-3xl text-2xl font-bold italic title-font mb-4 text-[#015474]">Get Latest News and
+                    Stories
+                </h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base italic font-bold italic">Stay informed about
+                    payroll and statuary updates
+                    and latest business news and stories.</p>
+            </div>
+            <div class="flex flex-wrap -m-4  ">
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative cursor-pointer hover:scale-110 ease-in duration-300">
+                        <img alt="gallery"
+                            class="absolute inset-0 w-full h-full object-cover object-center hover:opacity-70  "
+                            src="https://images.unsplash.com/photo-1562577308-9e66f0c65ce5?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG1hcmtldGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600">
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-90">
+                            <h2 class="tracking-widest text-lg title-font font-bold text-[#015474] italic mb-1">Business
+                                and
+                                Marketing
+                            </h2>
+
+                            <p class="leading-relaxed italic font-bold">Photo booth fam kinfolk cold-pressed sriracha
+                                leggings jianbing
+                                microdosing tousled waistcoat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative cursor-pointer  hover:scale-110 ease-in duration-300">
+                        <img alt="gallery"
+                            class="absolute inset-0 w-full h-full object-cover object-center  hover:opacity-70  hover:scale-110 ease-in duration-300 "
+                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&raw_url=true&q=60&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1hcmtldGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600">
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-90">
+                            <h2 class="tracking-widest text-lg title-font font-bold text-[#015474] italic mb-1">Awesome
+                                Team
+                            </h2>
+
+                            <p class="leading-relaxed italic font-bold">Photo booth fam kinfolk cold-pressed sriracha
+                                leggings jianbing
+                                microdosing tousled waistcoat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4 ">
+                    <div class="flex relative cursor-pointer  hover:scale-110 ease-in duration-300">
+                        <img alt="gallery"
+                            class="absolute inset-0 w-full h-full object-cover object-center  hover:opacity-70  hover:scale-110 ease-in duration-300 "
+                            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fG1hcmtldGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600">
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-90">
+                            <h1 class="tracking-widest text-lg title-font font-bold text-[#015474] italic mb-1">Best
+                                Technology
+                            </h1>
+
+                            <p class="leading-relaxed italic font-bold">Photo booth fam kinfolk cold-pressed sriracha
+                                leggings jianbing
+                                microdosing tousled waistcoat.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Latest compliace and Statuary -->
+    <section class="text-blue-900 body-font bg-blue-100">
+        <div class="container px-5 py-4 mx-auto">
+            <div class="flex flex-col text-center w-full mb-5">
+                <h1 class="sm:text-3xl text-2xl font-bold italic title-font mb-4 text-[#015474] font-bold">Latest
+                    Updates &
+                    Statuary Updates</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed italic text-[#015474] text-sm font-bold">We got it all
+                    covered for you while you
+                    are focusing on strategic HR</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Details Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide relative carousel-dark bg-[#015474] py-9"
+        data-bs-ride="carousel">
+        <div class="carousel-inner relative w-full overflow-hidden">
+            <div class="carousel-item active relative float-left w-full text-center">
+                <p class="text-xl italic mx-auto text-white font-bold max-w-4xl">
+                    Associate Business Service (india) Private Limited is a Non-govt company, incorporated on 10 Dec,
+                    2003. It's a private unlisted company and is classified as'company limited by shares'.
+
+                    Company's authorized capital stands at Rs 10.0 lakhs and has 94.0% paid-up capital which is Rs 9.4
+                    lakhs. 
+                </p>
+                <div class="mt-12 mb-6 flex justify-center">
+                    <button
+                        class="text-[#015474] bg-white border-0 py-2 px-8 focus:outline-none hover:bg-green-600 hover:text-white rounded-full text-lg font-bold mx-auto  hover:scale-110">SCHEDULE
+                        AN EXPLORATION CALL</button>
+                </div>
+
+            </div>
+            <div class="carousel-item relative float-left w-full text-center">
+                <p class="text-xl italic mx-auto text-white font-bold max-w-4xl">
+                    Associate Business Service (india) Private Limited is majorly in null business from last 19 years and currently, company operations are active. Current board members & directors are SRIRAAM SATTANATHAN and JAYASHREE SIVASUBRAMANIAN .
+                </p>
+                <div class="mt-12 mb-6 flex justify-center">
+                    <button
+                        class="text-[#015474] bg-white border-0 py-2 px-8 focus:outline-none hover:bg-green-600 hover:text-white rounded-full text-lg font-bold mx-auto  hover:scale-110">SCHEDULE
+                        AN EXPLORATION CALL</button>
+                </div>
+
+            </div>
+            <div class="carousel-item relative float-left w-full text-center">
+                <p class="text-xl italic mx-auto text-white font-bold max-w-4xl">
+                    Associate Business Service (india) Private Limited registered address is D2, B BLOCK, PARSN PARADISE, NEW NO.46, OLD NO.109 G.N.CHETTY ROAD, T.NAGAR CHENNAI Chennai TN 600017 IN.
+                </p>
+                <div class="mt-12 mb-6 flex justify-center">
+                    <button
+                        class="text-[#015474] bg-white border-0 py-2 px-8 focus:outline-none hover:bg-green-600 hover:scale-110 hover:text-white rounded-full text-lg font-bold mx-auto">SCHEDULE
+                        AN EXPLORATION CALL</button>
+                </div>
+
+            </div>
+        </div>
+        <button
+            class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+            type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+            class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+            type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+
+
+    <!-- Latest Updates and Call Us -->
+    <section class="text-gray-600 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="sm:text-3xl text-2xl font-bold italic title-font mb-4 text-[#015474]">Get Latest News and
+                    Updates
+                    in your Mailbox
+                </h1>
+
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base italic font-bold text-black">Join our Mailing list
+                    and stay informed
+                </p>
+            </div>
+            <div class="lg:w-1/2 md:w-2/3 mx-auto bg-[#015474] px-5 py-5 rounded-lg">
+                <div class="flex-col flex-wrap -m-2">
+                    <div class="p-2 ">
+                        <div class="relative">
+
+                            <input type="text" id="name" name="name"
+                                class="w-full bg-[#015474] bg-opacity-50 rounded-full border border-white  border-b-2 font-bold border-t-0 border-l-0 border-r-0 text-center outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                placeholder="Enter Your Name Here">
+                        </div>
+                    </div>
+                    <div class="p-2 ">
+                        <div class="relative">
+
+                            <input type="text" id="name" name="name"
+                                class="w-full bg-[#015474] bg-opacity-50 rounded-full border border-white  border-b-2 font-bold border-t-0 border-l-0 border-r-0 text-center outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                placeholder="Enter Your Email Here">
+                        </div>
+                    </div>
+
+                    <div class="p-2 w-full">
+                        <button
+                            class="flex mx-auto font-bold text-white bg-green-600 border-0 py-2 px-11 md:px-24 lg:px-24 xl:px-24 focus:outline-none hover:bg-green-500 hover:scale-110 ease-in-out rounded-full text-lg">Submit</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Frequently Asked Question -->
+    <section class=" body-font bg-gray-300">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="sm:text-3xl text-2xl  font-bold title-font mb-4 text-[#015474]">Frequently Asked Question
+                </h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Learn More about Assciate business Services and
+                    its domain</p>
+            </div>
+            <div
+                class="flex-col flex-wrap w-full sm:flex-row flex-col mx-auto  sm:space-y-0 space-y-4 sm:px-0 item-center">
+
+                <div class="accordion accordion-flush mx-auto flex-col flex-wrap space-y-2 lg:w-[80%] "
+                    id="accordionFlushExample">
+                    <div class="accordion-item border-t-0 border-l-0 border-r-0 rounded-none border border-gray-200">
+                        <h2 class="accordion-header mb-0 font-bold" id="flush-headingOne">
+                            <button
+                                class="accordion-button relative flex items-center w-full mx-auto py-4 px-5 text-base text-white text-left font-bold bg-blue-800  border-0 rounded-none transition focus:outline-none focus:bg-gray-700 focus:text-white"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                What is Payroll Processing ?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse border-0 collapse show"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body py-4 px-5 bg-white">Payroll Processing is one of the most
+                                critical and essential tasks of Human Resources departement of any company . It's about
+                                ensuring that your employee are paid timely and accurately . It is a step by step
+                                process to compute gross to net pay . It includes calculation of taxes and deduction to
+                                arrive at net pay.</div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item border-t-0  border-l-0 border-r-0 rounded-none border border-gray-200">
+                        <h2 class="accordion-header mb-0 font-bold" id="flush-headingTwo">
+                            <button
+                                class="accordion-button collapsed relative flex items-center w-full mx-auto py-4 px-5 text-base text-white text-left font-bold bg-blue-800  border-0 rounded-none transition focus:outline-none focus:bg-gray-700 focus:text-white"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                What is Outsourced Payroll Processing ?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse border-0 collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body py-4 px-5  bg-white">An outsourced payroll service has a
+                                web-based connection that makes it easy for employees and employers to request and
+                                manage time off accruals. Reports give a detailed ledger by employee for each pay period
+                                with data for wages and deductions</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-t-0  border-l-0 border-r-0 rounded-none border border-gray-200">
+                        <h2 class="accordion-header mb-0 font-bold" id="flush-headingThree">
+                            <button
+                                class="accordion-button collapsed relative flex items-center w-full mx-auto py-4 px-5 text-base text-white text-left font-bold bg-blue-800  border-0 rounded-none transition focus:outline-none focus:bg-gray-700 focus:text-white"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                What are the benefits of outsourcing Payroll to ABS ?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse border-0 collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body py-4 px-5  bg-white">Frees up both time and resources allowing
+                                businesses to focus more on core tasks. It reduces costs and risks involved. Gives
+                                businesses access to the latest technology and expertise to perform payroll functions
+                                well</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-t-0  border-l-0 border-r-0 rounded-none border border-gray-200">
+                        <h2 class="accordion-header mb-0 font-bold" id="flush-headingFour">
+                            <button
+                                class="accordion-button collapsed relative flex items-center w-full mx-auto py-4 px-5 text-base text-white text-left font-bold bg-blue-800  border-0 rounded-none transition focus:outline-none focus:bg-gray-700 focus:text-white"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                aria-expanded="false" aria-controls="flush-collapseFour">
+                                What are the services offered by the Associate business services
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse border-0 collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body py-4 px-5  bg-white">At ABS, we provide up to date technology
+                                based process driven pay roll services for small, medium and large businesses. Our
+                                custom fit payroll processing offers you a single point of customer contact by providing
+                                you specialized payroll staff that can stream line your HR activities and track the
+                                details for compliances.</div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Form -->
+    <section class="text-gray-600 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="sm:text-3xl text-2xl font-bold italic title-font mb-4 text-[#015474]">Talk To Our Consultant
+                    Now
+                </h1>
+                <h1 class="sm:text-3xl text-2xl font-bold italic title-font mb-4 text-[#015474]">Dial (+91)-9884401447
+                </h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed font-bold italic text-base text-black">Cann't find Answer you
+                    are looking for
+                    ? Send your question to us .</p>
+            </div>
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <div class="flex-col flex-wrap -m-2">
+                    <div class="p-2 ">
+                        <div class="relative">
+
+                            <input type="text" id="name" name="name"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-900  border-b-2 focus:bg-white focus:ring-none border-t-0 border-l-0 border-r-0 text-center outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                placeholder="Enter Your Name Here">
+                        </div>
+                    </div>
+                    <div class="p-2 ">
+                        <div class="relative">
+
+                            <input type="text" id="name" name="name"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-900  border-b-2 focus:bg-white focus:ring-none border-t-0 border-l-0 border-r-0 text-center outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                placeholder="Enter Your Valid Email Address">
+                        </div>
+                    </div>
+                    <div class="p-2 ">
+                        <div class="relative">
+
+                            <input type="text" id="name" name="name"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-900  border-b-2 focus:bg-white focus:ring-none border-t-0 border-l-0 border-r-0 text-center outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                placeholder="Enter Your Phone Number">
+                        </div>
+                    </div>
+                    <div class="p-2 ">
+                        <div class="relative">
+
+                            <input type="text" id="name" name="name"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-900  border-b-2 focus:bg-white focus:ring-none border-t-0 border-l-0 border-r-0 text-center outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                placeholder="Enter Your Message">
+                        </div>
+                    </div>
+
+
+                    <div class="p-2 w-full">
+                        <button
+                            class="flex mx-auto font-bold text-white bg-green-600 border-0 py-2 px-24 focus:outline-none hover:bg-green-800 hover:scale-110 ease-in-out rounded-full text-lg">Submit</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Direction -->
+    <section class="text-white body-font bg-[#015474]">
+        <div class="container px-5 py-5 mx-auto">
+            <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+                <div class="flex-grow">
+                    <h1 class="sm:pr-16 text-2xl font-bold italic title-font text-white">Let's meet and chat over
+                        some coffee at our office. Visit Us!</h1>
+                    <h4 class="sm:pr-16 text-sm font-bold italic title-font text-white">We are headquarted in
+                        chennai but we are also available in Bengaluru and Delhi .</h4>
+                </div>
+                <button
+                    class="flex-shrink-0 text-[#015474] bg-white border-0 py-2 px-8 focus:outline-none hover:scale-110 rounded-full text-lg font-bold mt-10 sm:mt-0">GET
+                    DIRECTION</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-white body-font bg-black">
+        <div class="container px-5 py-4 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="w-6 invert"
+                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                </svg>
+                <span class="ml-3 text-xl text-white">Redtron</span>
+            </a>
+            <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2022 Redtron —
+                <a href="https://twitter.com/knyttneve" class="text-white ml-1" rel="noopener noreferrer"
+                    target="_blank">@redtron22.ac.in</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-white">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-white">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-white">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-white">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+
+</html>
